@@ -1,0 +1,15 @@
+<h1>Tabla de multiplicar V1:</h1>
+
+<form #multiplicarForm="ngForm" (ngSubmit)="multiplicaNumeros()">
+    <label>Numero a multiplicar:</label>
+    <input type="number" #cajamultiplicar>
+    <button>Multiplicar</button>
+</form>
+
+<ul>
+    @for (num of multiplica; track num) {
+        <li>
+            {{num}}
+        </li>
+    }
+</ul>
